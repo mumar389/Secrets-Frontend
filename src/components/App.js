@@ -16,7 +16,7 @@ function App() {
     
     <Navbar/>
     <Routes>
-    <Route exact path="/" component={<Home />} />
+    <Route exact path="/" element={<Home />} />
     <Route exact path="sign-in" element={<Login />} />
     <Route exact path="secret-page" element={<Secret />} />
     <Route exact path="secret-form" element={<Form />} />

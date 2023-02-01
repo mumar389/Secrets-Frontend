@@ -27,18 +27,18 @@ const Navbar = () => {
           {cookies.jwt!=null?
             <>
             <li className="nav-item">
-              <NavLink className="nav-link active" aria-current="page" to="https://secret-web.netlify.app/secret-page">
+              <NavLink className="nav-link active" aria-current="page" to="/secret-page">
                 Home
               </NavLink>
             </li>
-            <NavLink className="nav-link active" aria-current="page" to="https://secret-web.netlify.app/log-out">
+            <NavLink className="nav-link active" aria-current="page" to="/log-out">
                 Logout
               </NavLink>
             </>
             :
             <>
             <li className="nav-item">
-              <NavLink className="nav-link active" aria-current="page" to="https://secret-web.netlify.app/">
+              <NavLink className="nav-link active" aria-current="page" to="/">
                 Home
               </NavLink>
             </li>
@@ -48,12 +48,12 @@ const Navbar = () => {
               </NavLink>
             </li> */}
             <li className="nav-item">
-              <NavLink className="nav-link" to="https://secret-web.netlify.app/about">
+              <NavLink className="nav-link" to="/about">
                 About Us
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link " to="https://secret-web.netlify.app/contact">
+              <NavLink className="nav-link " to="/contact">
                 Contact Us
               </NavLink>
             </li>
