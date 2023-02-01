@@ -37,7 +37,7 @@ const Form = () => {
     const saveSecret=async (e)=>{
       // console.log(user.id);
       e.preventDefault();
-      const res=await fetch("https://secrets-chi.vercel.app/api/v1/secret/create-secret",{
+      const res=await fetch("https://secrets-backend.vercel.app/api/v1/secret/create-secret",{
         method:"POST",
         headers:{
           "Content-Type":"application/json",

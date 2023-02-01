@@ -6,7 +6,7 @@ const Fetched = (props) => {
   const [cookies]=useCookies();
   const handleDelete=async(e)=>{
     e.preventDefault();
-    const res=await fetch(`https://secrets-chi.vercel.app/api/v1/secret/delete-secret/${props.uid}`,{
+    const res=await fetch(`https://secrets-backend.vercel.app/api/v1/secret/delete-secret/${props.uid}`,{
       method:"POST",
       headers:{
         "Content-Type":"application/json",
@@ -18,7 +18,7 @@ const Fetched = (props) => {
       navigate('/secret-page')
     }else{
       window.alert("Deleted Sucess");
-      window.open('https://secrets-weld.vercel.app/secret-page','_self')
+      window.open('https://precious-baklava-88b41a.netlify.app/secret-page','_self')
     }
   }
   return (

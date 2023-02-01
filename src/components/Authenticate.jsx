@@ -6,7 +6,7 @@ const Authenticate = (props) => {
     // const navigate=useNavigate();
 
 const setUser=async ()=>{
-    const res=await fetch("https://secrets-chi.vercel.app/api/v1/verify-user",{
+    const res=await fetch("https://secrets-backend.vercel.app/api/v1/verify-user",{
         method:"GET",
         headers:{
             "Content-Type":"application/json",
@@ -16,7 +16,7 @@ const setUser=async ()=>{
     if(!(res.status===200)){
         console.log("Unauthorized Access");
         // navigate('/sign-in')
-        window.open('https://remarkable-torte-4e66af.netlify.app/sign-in','_self')
+        window.open('https://precious-baklava-88b41a.netlify.app/sign-in','_self')
     }
     else{
         const response=await res.json();

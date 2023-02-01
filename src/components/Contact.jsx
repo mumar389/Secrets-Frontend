@@ -22,7 +22,7 @@ const Contact = () => {
       window.alert("Plzz Fill the Form Correctly")
       return;
     }
-    const res=await fetch('https://secrets-chi.vercel.app/api/v1/save-feedback',{
+    const res=await fetch('https://secrets-backend.vercel.app/api/v1/save-feedback',{
       method:"POST",
       headers:{
         "Content-Type":"application/json"

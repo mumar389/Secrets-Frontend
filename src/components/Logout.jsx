@@ -5,7 +5,7 @@ const Logout = () => {
     const navigate=useNavigate();
     const [cookies]=useCookies();
     const signout=async()=>{
-    const res=await fetch('https://secrets-chi.vercel.app/api/v1/sign-out',{
+    const res=await fetch('https://secrets-backend.vercel.app/api/v1/sign-out',{
         method:"GET",
         headers:{
                 "Content-Type":"application/json",
@@ -18,7 +18,7 @@ const Logout = () => {
     }else{
        
         window.alert("Logout Sucessfull");
-        window.open('https://secrets-weld.vercel.app/sign-in','_self')
+        window.open('https://precious-baklava-88b41a.netlify.app/sign-in','_self')
     }
 }
 useEffect(()=>{

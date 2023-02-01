@@ -23,7 +23,7 @@ const Register = () => {
     e.preventDefault();
     const {name,email,password,cp}=data;
    //Using fetch api
-   const res=await fetch("https://secrets-chi.vercel.app/api/v1/create",{
+   const res=await fetch("https://secrets-backend.vercel.app/api/v1/create",{
     method:"POST",
     headers:{
       "Content-Type":"application/json"

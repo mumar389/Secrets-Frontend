@@ -23,7 +23,7 @@ const Secret = () => {
   }
   const [secrets,setSecret]=useState([]);
   const getSecret=async (e)=>{
-    const res=await fetch("https://secrets-chi.vercel.app/api/v1/secret/get-secret",{
+    const res=await fetch("https://secrets-backend.vercel.app/api/v1/secret/get-secret",{
       method:"GET",
       headers:{
         "Content-Type":"application/json",

@@ -21,7 +21,7 @@ const Login = () => {
     e.preventDefault();
     const {email,password}=user;
 
-    const res=await fetch("https://secrets-chi.vercel.app/api/v1/create-session",{
+    const res=await fetch("https://secrets-backend.vercel.app/api/v1/create-session",{
       method:"POST",
       headers:{
         "Content-Type":"application/json"
@@ -42,14 +42,14 @@ const Login = () => {
       }
       window.alert("Login Successfull")
       // navigate('/secret-page')
-      window.open('https://secrets-weld.vercel.app/secret-page','_self')
+      window.open('https://precious-baklava-88b41a.netlify.app/secret-page','_self')
     }
   }
 
   const googleAuth=async(e)=>{
     try {
       e.preventDefault();
-      window.open('https://secrets-chi.vercel.app/api/v1/auth/google','_self')
+      window.open('https://secrets-backend.vercel.app/api/v1/auth/google','_self')
       
     } catch (error) {
       console.log("error--:",error)
