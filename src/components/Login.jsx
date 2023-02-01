@@ -42,7 +42,7 @@ const Login = () => {
       }
       window.alert("Login Successfull")
       // navigate('/secret-page')
-      window.open('https://secret-web.netlify.app/secret-page','_self')
+      window.open('/secret-page','_self')
     }
   }
 
