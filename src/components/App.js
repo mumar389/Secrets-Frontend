@@ -16,14 +16,14 @@ function App() {
     
     <Navbar/>
     <Routes>
-    <Route path="https://secret-web.netlify.app/" element={<Home />} />
-    <Route path="https://secret-web.netlify.app/sign-in" element={<Login />} />
-    <Route path="https://secret-web.netlify.app/secret-page" element={<Secret />} />
-    <Route path="https://secret-web.netlify.app/secret-form" element={<Form />} />
-    <Route path="https://secret-web.netlify.app/sign-up" element={<Register />} />
-    <Route path="https://secret-web.netlify.app/about" element={<About />} />
-    <Route path="https://secret-web.netlify.app/contact" element={<Contact />} />
-    <Route path="https://secret-web.netlify.app/log-out" element={<Logout />} />
+    <Route path="/" element={<Home />} />
+    <Route path="/sign-in" element={<Login />} />
+    <Route path="/secret-page" element={<Secret />} />
+    <Route path="/secret-form" element={<Form />} />
+    <Route path="/sign-up" element={<Register />} />
+    <Route path="/about" element={<About />} />
+    <Route path="/contact" element={<Contact />} />
+    <Route path="/log-out" element={<Logout />} />
     </Routes>
 
     </div>
