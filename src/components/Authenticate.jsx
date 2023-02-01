@@ -16,7 +16,8 @@ const setUser=async ()=>{
     if(!(res.status===200)){
         console.log("Unauthorized Access");
         // navigate('/sign-in')
-        window.open('https://secret-web.netlify.app/sign-in','_self')
+        window.open('/sign-in','_self')
+        // window.open('https://secret-web.netlify.app/sign-in','_self')
     }
     else{
         const response=await res.json();

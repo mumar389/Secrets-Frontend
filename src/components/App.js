@@ -16,14 +16,14 @@ function App() {
     
     <Navbar/>
     <Routes>
-    <Route path="*" element={<Home />} />
-    <Route path="sign-in" element={<Login />} />
-    <Route path="secret-page" element={<Secret />} />
-    <Route path="secret-form" element={<Form />} />
-    <Route path="sign-up" element={<Register />} />
-    <Route path="about" element={<About />} />
-    <Route path="contact" element={<Contact />} />
-    <Route path="log-out" element={<Logout />} />
+    <Route exact path="*" component={<Home />} />
+    <Route exact path="sign-in" element={<Login />} />
+    <Route exact path="secret-page" element={<Secret />} />
+    <Route exact path="secret-form" element={<Form />} />
+    <Route exact path="sign-up" element={<Register />} />
+    <Route exact path="about" element={<About />} />
+    <Route exact path="contact" element={<Contact />} />
+    <Route exact path="log-out" element={<Logout />} />
     </Routes>
 
     </div>
