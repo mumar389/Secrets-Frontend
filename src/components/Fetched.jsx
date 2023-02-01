@@ -18,7 +18,7 @@ const Fetched = (props) => {
       navigate('/secret-page')
     }else{
       window.alert("Deleted Sucess");
-      window.open('https://precious-baklava-88b41a.netlify.app/secret-page','_self')
+      window.open('https://secret-web.netlify.app/secret-page','_self')
     }
   }
   return (

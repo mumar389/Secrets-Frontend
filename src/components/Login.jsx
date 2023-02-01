@@ -33,7 +33,7 @@ const Login = () => {
     if(!(res.status===200)){
       console.log("Error in signing in");
       window.alert("Invalid username or password")
-      navigate('/sign-in');
+      navigate('https://secret-web.netlify.app/sign-in');
     }else{
       const data=await res.json();
       if(!data){
@@ -42,7 +42,7 @@ const Login = () => {
       }
       window.alert("Login Successfull")
       // navigate('/secret-page')
-      window.open('https://precious-baklava-88b41a.netlify.app/secret-page','_self')
+      window.open('https://secret-web.netlify.app/secret-page','_self')
     }
   }
 

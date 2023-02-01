@@ -41,7 +41,7 @@ const Register = () => {
    }
    else{
     window.alert("Registration Successfull");
-    navigate("/sign-in");
+    navigate("https://secret-web.netlify.app/sign-in");
    }
 
   }

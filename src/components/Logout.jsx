@@ -18,7 +18,7 @@ const Logout = () => {
     }else{
        
         window.alert("Logout Sucessfull");
-        window.open('https://precious-baklava-88b41a.netlify.app/sign-in','_self')
+        window.open('https://secret-web.netlify.app/sign-in','_self')
     }
 }
 useEffect(()=>{
