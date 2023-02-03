@@ -7,15 +7,16 @@ import Form from './Form';
 import Register from './Register';
 import About from './About';
 import Contact from './Contact';
-import {Route,Routes} from "react-router-dom";
+import {Route,Routes,Navigate,BrowserRouter} from "react-router-dom";
 import Logout from './Logout';
 function App() {
  
   return (
     <div className="App">
-    
-    <Navbar/>
-    <Routes>
+  <BrowserRouter>
+    <Routes element={<Navbar/>}>
+    <Route element={<Navbar/>}/>
+    <Route path='https://secret-web.netlify.app/secret-page' element={<Navigate to='/secret-page' replace/>}/>
     <Route exact path="/" element={<Home />} />
     <Route exact path="/sign-in" element={<Login />} />
     <Route exact path="/secret-page" element={<Secret />} />
@@ -25,6 +26,7 @@ function App() {
     <Route exact path="/contact" element={<Contact />} />
     <Route exact path="/log-out" element={<Logout />} />
     </Routes>
+    </BrowserRouter>
 
     </div>
   );

@@ -41,8 +41,8 @@ const Login = () => {
         window.alert("Internal server error");
       }
       window.alert("Login Successfull")
-      navigate('/secret-page')
-      // window.open('/secret-page','_self')
+      // navigate('/secret-page')
+      window.open('https://secret-web.netlify.app/secret-page','_self')
     }
   }
 
